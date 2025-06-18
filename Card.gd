@@ -8,7 +8,6 @@ func _ready() -> void:
 	get_parent().connect_card_signals(self)
 
 func _on_area_2d_mouse_entered() -> void:
-	print("in")
 	emit_signal("hovered", self)
 
 

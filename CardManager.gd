@@ -1,6 +1,7 @@
 extends Node2D
 
 const COLLISION_MASK_CARD = 1
+const COLLISION_MASK_TABLE = 2
 const HIGHLIGHT_RATE = 1.2 # 卡片的悬停效果的缩放倍率
 
 var card_being_dragged # 正在被拖动的卡牌
@@ -23,7 +24,8 @@ func _input(event: InputEvent) -> void:
 			if card:
 				start_drag(card)
 		else:
-			finish_drag()
+			if card_being_dragged:
+				finish_drag()
 
 func raycast_check_for_card():
 	# 返回与当前鼠标位置发生碰撞的卡片
@@ -87,4 +89,22 @@ func start_drag(card):
 	
 func finish_drag():
 	card_being_dragged.scale = Vector2(HIGHLIGHT_RATE, HIGHLIGHT_RATE)
+	var table_found = raycast_check_for_table()
+	if table_found:
+		card_being_dragged.position = table_found.position
+		card_being_dragged.get_node("Area2D/CollisionShape2D").disabled = true #让这张卡牌的碰撞失效
+		table_found.card_in_table.append(card_being_dragged) # 把桌上的牌加入队列
+		# print(table_found.card_in_table)
 	card_being_dragged = null
+
+func raycast_check_for_table():
+	var space_state = get_world_2d().direct_space_state # 一种保存了所有 2D 世界组件的资源，例如画布和物理运算空间。
+	var parameters = PhysicsPointQueryParameters2D.new()
+	parameters.position = get_global_mouse_position()
+	parameters.collide_with_areas = true
+	parameters.collision_mask = COLLISION_MASK_TABLE
+	var result = space_state.intersect_point(parameters)
+	if result.size() > 0:
+		return result[0].collider.get_parent()
+	else:
+		return null
