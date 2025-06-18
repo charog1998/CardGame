@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csngvrinbct8j"
-path="res://.godot/imported/萝卜人戴帽子.png-e3a4a39502ac67cf391356ced359f254.ctex"
+uid="uid://dnr3diriii1g5"
+path="res://.godot/imported/bk_card4.png-471dc866008b1cc2e067164d711f329b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://萝萝们/萝卜人戴帽子.png"
-dest_files=["res://.godot/imported/萝卜人戴帽子.png-e3a4a39502ac67cf391356ced359f254.ctex"]
+source_file="res://萝卜牌/bk_card4.png"
+dest_files=["res://.godot/imported/bk_card4.png-471dc866008b1cc2e067164d711f329b.ctex"]
 
 [params]
 

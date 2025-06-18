@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhaucoh832db0"
-path="res://.godot/imported/萝卜人_建筑.png-a8f6dd895559b65f0b79e0d24aa6651d.ctex"
+uid="uid://bjvkkemj7ewtk"
+path="res://.godot/imported/bk_card7.png-4cb0f6bdd1b2d91ec6e9c6a1bc12fef3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://萝萝们/萝卜人_建筑.png"
-dest_files=["res://.godot/imported/萝卜人_建筑.png-a8f6dd895559b65f0b79e0d24aa6651d.ctex"]
+source_file="res://萝卜牌/bk_card7.png"
+dest_files=["res://.godot/imported/bk_card7.png-4cb0f6bdd1b2d91ec6e9c6a1bc12fef3.ctex"]
 
 [params]
 

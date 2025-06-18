@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xqat0prrug62"
-path="res://.godot/imported/role_icon_cglbr.png-61489390123f1ffb12a3b89356fffb33.ctex"
+uid="uid://kr86jp1mjrw4"
+path="res://.godot/imported/bk_card9.png-7c20449b106ed557ad054491369f580a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://萝萝们/role_icon_cglbr.png"
-dest_files=["res://.godot/imported/role_icon_cglbr.png-61489390123f1ffb12a3b89356fffb33.ctex"]
+source_file="res://萝卜牌/bk_card9.png"
+dest_files=["res://.godot/imported/bk_card9.png-7c20449b106ed557ad054491369f580a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d06jnrj4gdvw1"
-path="res://.godot/imported/元宝萝.png-97241616fb47c2f60f1e85cbc2c7193e.ctex"
+uid="uid://b6snmlaxwy715"
+path="res://.godot/imported/bk_card1.png-e024b09b59df7e36ed000e4ca22be290.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://萝萝们/元宝萝.png"
-dest_files=["res://.godot/imported/元宝萝.png-97241616fb47c2f60f1e85cbc2c7193e.ctex"]
+source_file="res://萝卜牌/bk_card1.png"
+dest_files=["res://.godot/imported/bk_card1.png-e024b09b59df7e36ed000e4ca22be290.ctex"]
 
 [params]
 
