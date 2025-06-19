@@ -7,9 +7,11 @@ const HIGHLIGHT_RATE = 1.2 # 卡片的悬停效果的缩放倍率
 var card_being_dragged # 正在被拖动的卡牌
 var screen_size
 var is_hovering_card
+var player_hand_reference
 
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
+	player_hand_reference = $"../PlayerHand1"
 	
 	
 func _process(delta: float) -> void:
@@ -91,11 +93,14 @@ func finish_drag():
 	card_being_dragged.scale = Vector2(HIGHLIGHT_RATE, HIGHLIGHT_RATE)
 	var table_found = raycast_check_for_table()
 	if table_found:
-		card_being_dragged.position = table_found.position
+		player_hand_reference.remove_from_player_hand(card_being_dragged)
 		card_being_dragged.get_node("Area2D/CollisionShape2D").disabled = true #让这张卡牌的碰撞失效
 		table_found.card_in_table.append(card_being_dragged) # 把桌上的牌加入队列
-		# print(table_found.card_in_table)
+		$"../Table/Label".text = "已打出"+str(table_found.card_in_table.size())+"张手牌"
+	else: # 如果牌没有丢到桌上就重新扔回手牌
+		player_hand_reference.add_card_to_hand(card_being_dragged)
 	card_being_dragged = null
+
 
 func raycast_check_for_table():
 	var space_state = get_world_2d().direct_space_state # 一种保存了所有 2D 世界组件的资源，例如画布和物理运算空间。

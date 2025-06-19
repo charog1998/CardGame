@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjvkkemj7ewtk"
-path="res://.godot/imported/bk_card7.png-4cb0f6bdd1b2d91ec6e9c6a1bc12fef3.ctex"
+uid="uid://dfgtlqi6u5ipj"
+path="res://.godot/imported/bk_card6.png-31770da384069b6f3028ed5a43b0ff08.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://萝卜牌/bk_card7.png"
-dest_files=["res://.godot/imported/bk_card7.png-4cb0f6bdd1b2d91ec6e9c6a1bc12fef3.ctex"]
+source_file="res://assets/萝卜牌/bk_card6.png"
+dest_files=["res://.godot/imported/bk_card6.png-31770da384069b6f3028ed5a43b0ff08.ctex"]
 
 [params]
 
